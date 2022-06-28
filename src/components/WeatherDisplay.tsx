@@ -128,7 +128,7 @@ export default function WeatherDisplay() {
             <p>Feels like {weatherInfo.feelsLike.toFixed()}°C</p>
             <h3>{weatherInfo.description}</h3>
             <div className="hr mt-2"></div>
-            <div className="highLow mt-2">
+            <div className="highLow mt-1">
               <h3>High: {weatherInfo.max.toFixed()}°C</h3>
               <h3>Low: {weatherInfo.min.toFixed()}°C</h3>
             </div>
