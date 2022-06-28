@@ -5,10 +5,9 @@ interface HomepageProps {
   h2Text: string;
 }
 
-export default function Homepage({ h2Text }: HomepageProps) {
+export default function Homepage() {
   return (
     <div>
-      <h2>{h2Text}</h2>
       <WeatherDisplay />
     </div>
   );
