@@ -113,11 +113,11 @@ export default function WeatherDisplay() {
         className=" shadow border border-dark roundedCorner col-md-4 offset-md-4 col-sm-6 offset-sm-3 col-xs-10 offset-xs-1 mt-5 vh-70"
         style={{ background: backgroundGradient }}
       >
-        <h4 className="mt-3">{formatDate}</h4>
+        <h4 className="mt-1">{formatDate}</h4>
         <h3 className="mt-2">{date.toLocaleTimeString()}</h3>
         {weatherInfo && (
           <>
-            <h1 className="mt-3">{weatherInfo.location}</h1>
+            <h1 className="mt-1">{weatherInfo.location}</h1>
 
             <img
               src={`http://openweathermap.org/img/w/${weatherInfo.iconCode}.png`}
@@ -127,8 +127,8 @@ export default function WeatherDisplay() {
             <h1 className="tempValue">{weatherInfo.temperature.toFixed()}°C</h1>
             <p>Feels like {weatherInfo.feelsLike.toFixed()}°C</p>
             <h3>{weatherInfo.description}</h3>
-            <div className="hr mt-5"></div>
-            <div className="highLow mt-5">
+            <div className="hr mt-2"></div>
+            <div className="highLow mt-2">
               <h3>High: {weatherInfo.max.toFixed()}°C</h3>
               <h3>Low: {weatherInfo.min.toFixed()}°C</h3>
             </div>
